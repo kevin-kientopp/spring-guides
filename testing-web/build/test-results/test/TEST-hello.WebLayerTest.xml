@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.WebLayerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-02-05T06:41:08" hostname="kevko-ThinkPad-T420" time="0.006">
+  <properties/>
+  <testcase name="shouldReturnDefaultMessage" classname="hello.WebLayerTest" time="0.006"/>
+  <system-out><![CDATA[2017-02-04 23:41:07.986  INFO 12732 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [hello.WebLayerTest], using SpringBootContextLoader
+2017-02-04 23:41:07.986  INFO 12732 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [hello.WebLayerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-04 23:41:07.987  INFO 12732 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [hello.WebLayerTest]: WebLayerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-02-04 23:41:07.996  INFO 12732 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration hello.Application for test class hello.WebLayerTest
+2017-02-04 23:41:07.998  INFO 12732 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-04 23:41:08.000  INFO 12732 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+2017-02-04 23:41:08.001  INFO 12732 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2017-02-04 23:41:08.002  INFO 12732 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7e2ee190, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@758d018c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@11e97215, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e7b247f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47506e41, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5a4c8646, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ef3ec0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1720ba7e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@53c6ecbd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6d062e35]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.1.RELEASE)
+
+2017-02-04 23:41:08.031  INFO 12732 --- [    Test worker] hello.WebLayerTest                       : Starting WebLayerTest on kevko-ThinkPad-T420 with PID 12732 (started by kevko in /home/kevko/spring-guides/testing-web)
+2017-02-04 23:41:08.031  INFO 12732 --- [    Test worker] hello.WebLayerTest                       : No active profile set, falling back to default profiles: default
+2017-02-04 23:41:08.033  INFO 12732 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@60739fe7: startup date [Sat Feb 04 23:41:08 MST 2017]; root of context hierarchy
+2017-02-04 23:41:08.161  INFO 12732 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-04 23:41:08.169  INFO 12732 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-04 23:41:08.294  INFO 12732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@60739fe7: startup date [Sat Feb 04 23:41:08 MST 2017]; root of context hierarchy
+2017-02-04 23:41:08.306  INFO 12732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String hello.HomeController.greeting()
+2017-02-04 23:41:08.307  INFO 12732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-04 23:41:08.308  INFO 12732 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-04 23:41:08.327  INFO 12732 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-04 23:41:08.327  INFO 12732 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-04 23:41:08.348  INFO 12732 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-04 23:41:08.393  INFO 12732 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2017-02-04 23:41:08.393  INFO 12732 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-02-04 23:41:08.400  INFO 12732 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 7 ms
+2017-02-04 23:41:08.445  INFO 12732 --- [    Test worker] hello.WebLayerTest                       : Started WebLayerTest in 0.436 seconds (JVM running for 7.902)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = hello.HomeController
+           Method = public java.lang.String hello.HomeController.greeting()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[text/plain;charset=UTF-8], Content-Length=[11]}
+     Content type = text/plain;charset=UTF-8
+             Body = Hello World
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
